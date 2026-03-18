@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Combo Grande",
+    "description": "Canchita grande + 2 gaseosas 21oz",
+    "price": 25.90,
+    "image": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/ItemGraphic/1244?allowPlaceHolder=true",
+    "category": "combos"
+  },
+  {
+    "id": 2,
+    "name": "Combo Mediano",
+    "description": "Canchita mediana + 1 gaseosa 21oz",
+    "price": 18.50,
+    "image": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/ItemGraphic/1243?allowPlaceHolder=true",
+    "category": "combos"
+  },
+  {
+    "id": 3,
+    "name": "Combo Nachos",
+    "description": "Nachos con queso + 1 refresco",
+    "price": 22.90,
+    "image": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/ItemGraphic/818?allowPlaceHolder=true",
+    "category": "combos"
+  },
+  {
+    "id": 4,
+    "name": "Agua San Luis",
+    "description": "Botella de agua sin gas 600ml",
+    "price": 5.00,
+    "image": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/ItemGraphic/990?allowPlaceHolder=true",
+    "category": "bebidas"
+  },
+  {
+    "id": 5,
+    "name": "Gaseosa Coca Cola 32oz",
+    "description": "Vaso gigante de Coca Cola",
+    "price": 9.50,
+    "image": "https://st2.depositphotos.com/1050070/12134/i/950/depositphotos_121349780-stock-photo-editorial-photo-of-classic-coca.jpg",
+    "category": "bebidas"
+  },
+  {
+    "id": 6,
+    "name": "Hot Dog Clásico",
+    "description": "Pan con salchicha frankfurter",
+    "price": 12.00,
+    "image": "https://img.freepik.com/foto-gratis/perro-caliente-clasico-ketchup-salsa-mostaza-aislado-sobre-fondo-blanco_123827-29686.jpg?semt=ais_hybrid&w=740&q=80",
+    "category": "snacks"
+  },
+  {
+    "id": 7,
+    "name": "Chocolates M&M",
+    "description": "Bolsa mediana de chocolates",
+    "price": 8.00,
+    "image": "https://thumbs.dreamstime.com/b/caramelos-del-chocolate-con-leche-del-s-de-m-m-82561409.jpg",
+    "category": "dulces"
+  },
+  {
+    "id": 8,
+    "name": "Gomitas Trululu",
+    "description": "Gomitas de sabores surtidos",
+    "price": 6.50,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqvK-ympgno3HeDDCTNBEyZEUcX63jRK9VSQ&s",
+    "category": "dulces"
+  }
+]

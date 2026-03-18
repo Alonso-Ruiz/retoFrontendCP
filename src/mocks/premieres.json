@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "https://wallpapercave.com/wp/wp4724939.jpg",
+    "title": "Vengadores: Endgame",
+    "description": "Los héroes se reúnen para una épica batalla final que decidirá el destino del universo.",
+    "genre": "Acción",
+    "duration": "2h 45min",
+    "rating": "PG-13"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1635446478477-1957f21b5e31",
+    "title": "Misterio en la Mansión",
+    "description": "Un detective brillante debe resolver un crimen imposible en una mansión aislada antes del amanecer.",
+    "genre": "Suspenso",
+    "duration": "1h 50min",
+    "rating": "R"
+  },
+  {
+    "id": 3,
+    "image": "https://sacnkprodpecms.blob.core.windows.net/content/posters/HO00008583.jpg",
+    "title": "Scream 7",
+    "description": "Cuando un nuevo asesino Ghostface emerge en el tranquilo pueblo donde Sidney Prescott (Neve Campbell) ha construido una nueva vida.",
+    "genre": "Terror",
+    "duration": "2h 10min",
+    "rating": "PG"
+  },
+  {
+    "id": 4,
+    "image": "https://sacnkprodpecms.blob.core.windows.net/content/posters/HO00008579.jpg",
+    "title": "Dia del Fin del Mundo ",
+    "description": "La familia Garrity superviviente debe abandonar la seguridad del búnker de Groenlandia y embarcarse en un peligroso viaje a través del diezmado.",
+    "genre": "Comedia",
+    "duration": "1h 35min",
+    "rating": "PG-13"
+  },
+  {
+    "id": 5,
+    "image": "https://images.justwatch.com/poster/313072812/s718/el-refugio-2021.jpg",
+    "title": "El Refugio",
+    "description": "Una familia intenta sobrevivir en un búnker después de un colapso global misterioso.",
+    "genre": "Drama",
+    "duration": "2h 05min",
+    "rating": "R"
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/seed/movie6/400/600",
+    "title": "Leyendas del Océano",
+    "description": "Una increíble aventura animada en el fondo del mar, donde una joven busca un tesoro mítico.",
+    "genre": "Animación",
+    "duration": "1h 45min",
+    "rating": "G"
+  }
+]

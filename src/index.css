@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-void: #050505;        /* fondo más oscuro */
+  --bg-deep: #0d0d0d;        /* fondo principal */
+  --bg-surface: #111111;     /* cards, panels */
+  --bg-elevated: #191919;    /* hover states */
+  --bg-glass: rgba(255,255,255,0.03); /* glassmorphism */
+
+  --red-fire: #e50914;       /* rojo principal */
+  --red-glow: #ff1a24;       /* rojo brillante hover */
+  --red-deep: #8b0000;       /* rojo oscuro */
+  --red-ember: rgba(229,9,20,0.15); /* red tint suave */
+
+  --text-bright: #ffffff;
+  --text-primary: #f0f0f0;
+  --text-secondary: #999999;
+  --text-muted: #555555;
+
+  --border-subtle: rgba(255,255,255,0.06);
+  --border-red: rgba(229,9,20,0.4);
+
+  --gold-accent: #c9a227;    /* detalle dorado (chip tarjeta) */
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[var(--bg-deep)] text-[var(--text-primary)];
+    font-family: var(--font-body);
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(
+      circle,
+      rgba(229,9,20,0.03) 1px,
+      transparent 1px
+    );
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Cursor personalizado sutil */
+  * { cursor: default; }
+  button, a, [role="button"], input, select { cursor: pointer; }
+  input[type="text"], input[type="email"], input[type="password"] { cursor: text; }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-body { font-family: var(--font-body); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb { 
+  background: var(--red-deep); 
+  border-radius: 3px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: var(--red-fire); 
+}
+
+/* Selección de texto */
+::selection {
+  background: var(--red-fire);
+  color: white;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: pageEnter 0.35s ease forwards;
+}
+
+@keyframes pageEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skeletons anim */
+.shimmer-premium {
+  background: linear-gradient(
+    90deg,
+    var(--bg-surface) 25%,
+    var(--bg-elevated) 50%,
+    var(--bg-surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Btn shimmer anim */
+.btn-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.2) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmerBtn 2s infinite linear;
+}
+
+@keyframes shimmerBtn {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Modal Check anim */
+.draw-check {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw 0.6s ease-out forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* fadeInUp para cards */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-grow-line {
+  animation: growLine 1s ease-out forwards;
+}
+
+@keyframes growLine {
+  from { width: 0; }
+  to { width: 80px; }
+}
