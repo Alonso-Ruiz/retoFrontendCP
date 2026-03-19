@@ -47,7 +47,6 @@ Para probar la pasarela de pagos integrada en la ruta `/pago`, utiliza los sigui
 - **Número de Tarjeta**: `4097440000000004` (SIN espacios)
 - **Fecha de Expiración**: `12/30` (Cualquier fecha válida posterior a la actual en formato MM/YY)
 - **CVV**: `321` (Cualquier número de 3 dígitos)
-- **Nombre de Tarjeta**: Puedes usar tus datos reales (el sistema inyecta internamente la palabra clave `APPROVED` para saltar el antifraude de Sandbox).
 - **DNI**: Requiere exactamente 8 dígitos (ej. `12345678`).
 
 *Nota sobre arquitectura tolerante a fallos: Debido a las constantes caídas técnicas de PayU Sandbox en la región de Perú (Account 512323), `payuService.js` cuenta con un sistema de failover automático que derivará el cobro falso a los servidores de respaldo de Colombia para garantizar que la presentación del prototipo nunca falle.*
@@ -59,3 +58,19 @@ Para probar la pasarela de pagos integrada en la ruta `/pago`, utiliza los sigui
 3. **Mocks y Skeletons**: Se incorporaron delays artificiales en los servicios (`setTimeout`) en conjunto a "Loading Skeletons" con efecto Shimmer Premium para simular latencias reales de red elegantemente.
 4. **Diseño "La Butaca"**: Toda la paleta cambió a un modo Oscuro Futurista usando variables CSS globales, animaciones interactivas al hacer scroll/hover y tipografías envolventes como `Bebas Neue` y `Outfit`.
 5. **Autenticación Ficticia**: Existen rutas públicas y protegidas manejadas mediante Interceptores de React Router.
+
+## 🚀 Vista del sitio web 
+
+<img width="1339" height="487" alt="image" src="https://github.com/user-attachments/assets/ccf12e68-0f10-48ec-949d-d484ac8cbc47" />
+
+<img width="1335" height="516" alt="image" src="https://github.com/user-attachments/assets/2f9b0877-5f1b-4f4e-9f24-8eaffa286ebe" />
+
+
+**Login**
+
+<img width="1336" height="507" alt="image" src="https://github.com/user-attachments/assets/0b5d76da-62b5-4df9-bad9-8f2aef5b6829" />
+
+
+**Dulceria**
+
+<img width="1338" height="522" alt="image" src="https://github.com/user-attachments/assets/e2cc43a0-65f5-4c07-a02a-7ca3d2b9f846" />
