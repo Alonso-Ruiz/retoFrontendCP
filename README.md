@@ -2,6 +2,10 @@
 
 Este es un proyecto de ecommerce para una cadena de cines (evolucionado visualmente a **La Butaca**), construido bajo un stack tecnológico moderno, responsivo y diseñado para ofrecer una experiencia de usuario fluida, estilo IMAX futurista, con temática oscura premium y acentos rojos brillantes.
 
+## Sitio publicado 💻🖥️
+
+**https://reto-frontend-cp-peach.vercel.app/**
+
 ## 🚀 Tecnologías Utilizadas
 
 - **React 18 + Vite**: Para un entorno de desarrollo ultra rápido y compilación optimizada.
